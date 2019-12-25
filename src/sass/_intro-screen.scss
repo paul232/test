@@ -19,18 +19,16 @@
 			max-width: 70%;
 
 			&__title {
-				font-size: 36px;
+				font-size: 42px;
 				font-family: 'FuturaDemic', sans-serif;
-				line-height: 1;
-				font-weight: bold;
-				line-height: 1.3;
+				line-height: 1.15;
 				color: #27282D;
 				margin-bottom: 25px;
 			}
 
 			&__subtitle {
 				line-height: 1.5;
-				font-size: 20px;
+				font-size: 22px;
 				line-height: 32px;
 				margin-bottom: 30px;
 			}
@@ -51,7 +49,7 @@
 
 				span {
 					font-weight: 500;
-					font-size: 18px;
+					font-size: 22px;
 				}
 			}
 		}
@@ -61,6 +59,48 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: flex-end;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.intro__screen {
+		&__inner {
+			padding-bottom: 20px;
+
+			&__info {
+				&__title {
+					line-height: 1;
+					font-size: 32px;
+				}
+				&__subtitle {
+					line-height: 1.1;
+					font-size: 20px;
+				}
+			}
+
+			&__img {
+				margin-bottom: -20px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 660px) {
+	.intro__screen {
+		&__inner {
+			&__info {
+				&__title {
+					line-height: 1;
+					font-size: 28px;
+				}
+				&__subtitle {
+					line-height: 1.1;
+					font-size: 18px;
+				}
+			}
+
 		}
 	}
 }

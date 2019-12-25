@@ -13,6 +13,7 @@ import IntroScreen from './views/IntroScreen.vue';
 import CreditCalculator from './views/CreditCalculator.vue';
 import './sass/main.scss';
 
+
 @Component({
 	components: { 
 		Header,

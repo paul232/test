@@ -30,7 +30,7 @@
 		&__current {
 			font-style: normal;
 			font-weight: normal;
-			font-size: 18px;
+			font-size: 22px;
 			line-height: 1;
 			text-align: center;
 			color: #212225;
@@ -42,6 +42,7 @@
 			justify-content: center;
 			align-items: center;
 			width: 100%;
+			transition: .3s ease;
 
 			&:after {
 				content: '';
@@ -81,7 +82,7 @@
 			&__item { 
 				padding: 8px 20px;
 				transition: .15s ease;
-				font-size: 18px;
+				font-size: 22px;
 
 				&:hover {
 					background: #f9fbfd;
@@ -140,7 +141,7 @@
 		}
 
 		&__text {
-			font-size: 14px;
+			font-size: 16px;
 			color: #000;
 		}
 	}
@@ -165,7 +166,7 @@
 		
 		span {
 			letter-spacing: 1px;
-			font-size: 18px;
+			font-size: 22px;
 			text-align: center;
 			color: #27282D;
 			transition: .3s ease;
@@ -186,10 +187,11 @@
 		transition: .3s ease;
 		
 		span {
-			letter-spacing: 0.5px;
-			font-size: 18px;
+			font-size: 22px;
 			color: #fff;
 			margin-right: 2px;
+			letter-spacing: 0.5px;
+			font-family: 'FuturaLightC', sans-serif;
 			transition: .3s ease;
 		}
 
@@ -222,4 +224,33 @@
 
 	}
 	
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+		&__right__part {
+			display: none;
+		}
+
+		&__nav__menu {
+			position: relative;
+			transform: none;
+			left: initial;
+		
+			&__burger {
+				margin-bottom: 0;
+			}
+
+			&__text {
+				display: none;
+			}
+		}
+
+		&__logo {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
 }

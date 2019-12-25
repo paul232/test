@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<div class="header__left__part">
-			<a class="header__logo link" href="https://www.aval.ua/" target="_blank">
+			<a class="header__logo link">
 				<img :src="logo" alt="">
 			</a>
 			<div class="header__lang__menu">
@@ -37,11 +37,7 @@
 			</div>
 		</div>
 		<div class="header__right__part">
-			<a 
-				class="header__payments__link link"
-				href="https://www.aval.ua/onlajn-platezhi"
-				target="_blank"
-			>
+			<a class="header__payments__link link">
 				<span>Платежі та перекази</span>
 			</a>
 			<div class="header__login__btn">
@@ -53,8 +49,8 @@
 </template>
 
 <script lang="ts">
-import Logo from '../assets/logo.png';
-import LoginIcon from '../assets/login-icon.svg';
+import Logo from '../assets/icons/logo.png';
+import LoginIcon from '../assets/icons/login-icon.svg';
 import { Component, Vue } from 'vue-property-decorator';
 
 

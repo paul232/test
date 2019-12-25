@@ -26,18 +26,16 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import ArrowLeft from '../assets/arrow-left.svg';
-import IntroScreenImg from '../assets/intro-screen-img.png';
+import ArrowLeft from '../assets/icons/arrow-left.svg';
+import IntroScreenImg from '../assets/icons/intro-screen-img.png';
 
 @Component<any>({
 	components: {
-		ArrowLeft
+		ArrowLeft,
 	}
 })
 export default class IntroScreen extends Vue {
-
-	IntroImage = IntroScreenImg;
-
+	IntroImage = `.${IntroScreenImg}`;
 } 
 
 </script>

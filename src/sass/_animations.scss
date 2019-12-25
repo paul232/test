@@ -1,0 +1,27 @@
+@keyframes scaleIn {
+	0% {
+		transform: scale(0);
+	}
+
+	90% {
+		transform: scale(1.05) ;
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+@keyframes fadeInRight {
+	0% {
+		left: 0;
+		opacity: 1;
+	}
+
+	100% {
+		left: 200%;
+		opacity: 0;
+		scale: 0;
+	}
+}

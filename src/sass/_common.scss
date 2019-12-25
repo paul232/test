@@ -1,0 +1,38 @@
+.link,
+.link:active,
+.link:focus {
+	outline: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.primary__btn {
+	background: #FFEF00;
+	border-radius: 4px;
+	padding: 12px 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: .3s ease;
+
+	&:hover {
+		background: #000;
+	}
+
+	&:hover span {
+		color: #fff;
+	}
+
+	span {
+		font-size: 20px;
+		text-align: center;
+		color: #000000;
+		transition: .3s ease;
+	}
+}

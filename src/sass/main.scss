@@ -1,0 +1,17 @@
+@import 'common';
+@import 'animations';
+@import 'header';
+@import 'intro-screen';
+@import 'credit-calculator';
+
+
+body {
+	padding: 0;
+	max-width: 1920px;
+	margin: 0 auto;
+	font-family: 'FuturaBookC', sans-serif; 
+}
+
+* {
+	box-sizing: border-box;
+}
